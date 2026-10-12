@@ -2,11 +2,45 @@
         box-sizing: border-box;
     }
     body {
-        background-color: lightgray;
+        background-color: rgb(174, 243, 12);
+        text-align: center;
+        color: coral;
+    }
+
+    flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    flex-item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: space-around;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: cyan;
+        border: 7px solid fuchsia;
+    }
+    .collections {
+
     }
     header {
-        color: green;
-        text-align: left;
+        color: coral;
+        text-align: center;
         font-family: Arial, sans-serif;
         font-size: 20px;
         font-style: bold;
@@ -27,7 +61,7 @@
         margin: 5px;
     }
     .my-container {
-        color: rgb(250, 4, 221);
+        color: crimson;
         background-color: lightskyblue;
         width: 200px;
         height: 100px;
@@ -44,21 +78,21 @@
     }
 
     h1{
-        color: purple;
+        color: coral;
         text-align: center;
         font-family: Arial, sans-serif;
         font-size: 30px;
         font-style: bold;
         }
     h2{
-        color: purple;
+        color: crimson;
         text-align: center;
         font-family: Arial, sans-serif;
         font-size: 25px;
         font-style: bold;
         }
     p {
-        color: rgb(77, 0, 128);
+        color crimson;
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
         font-align: left;
