@@ -1,0 +1,47 @@
+body {
+    background color: grey
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 100px 100px;
+    gap: 1rem;
+    grid-template-areas:
+    "manuscript newspapers photographs maps"
+    "letters letters books books"
+    "letters letters books books";
+}
+
+.collection {
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 3px solid purple;
+    box-shadow: 0 2px 4px beige;
+}
+
+.collection:hover {
+    transform: scale(1.05);
+    transition: transform 0.3 ease;
+    background-color: aquamarine;
+}
+
+@media (max-width: 768px) {
+    .collections {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .collection {
+        background-color: red;
+    }
+}
+
+    .manuscript {
+        grid-area: manuscript;
+    }
+
+    .book {
+        grid-area: book;
+    }
