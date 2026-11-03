@@ -53,13 +53,9 @@ header {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
     grid-template-areas: "hero-action";
-}
-
-.hero-feature {
-    display: none;
 }
 
 .hero-action {
@@ -72,12 +68,11 @@ header {
     margin: 5px;
 }
 
-.desktop-ad {
-    display: none;
-}
+
 
 main {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     grid-template-areas: "article-feature mobile-ad article-listing";
@@ -87,8 +82,7 @@ p {
     color: crimson;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    font-align: left;
-    max-width: 600px;
+    font-align: center;
 }
 
 .article-feature {
@@ -121,14 +115,6 @@ p {
     margin: 5px;
 }
 
-.sidebar {
-    display: none;
-}
-
-.sidebar-feature {
-    display: none;
-}
-
 footer {
     display: grid;
     color: rgb(250, 4, 221);
@@ -143,7 +129,7 @@ footer {
 @media (min-width: 576px) {
    
 body {
-    background color: grey
+    background color: grey;
 }
 
 header {
@@ -217,7 +203,7 @@ header {
 }
 
 .desktop-ad {
-    display:none;
+    display: none;
 }
 
 main {
@@ -291,18 +277,14 @@ footer {
     padding: 10px;
     border-radius: 20px;
     margin: 5px;
-} 
-    
-    
 }
-
-
+}
 /* DESKTOP */
 
 @media (min-width: 992px) {
     
 body {
-    background color: grey
+    background color: grey;
 }
 
 header {
@@ -396,8 +378,7 @@ p {
     color: crimson;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    font-align: left;
-    max-width: 600px;
+    font-align: center;
 }
 
 .article-feature {
@@ -410,6 +391,10 @@ p {
     margin: 5px;
 }
 
+.mobile-ad {
+    display: none;
+}
+
 .article-listing {
     grid-area: article-listing;
     gap: 10px;
@@ -418,14 +403,6 @@ p {
     background-color: lightblue;
     border-radius: 20px;
     margin: 5px;
-}
-
-.sidebar {
-    display: grid;
-    background: BlanchedAlmond;
-    padding: 10px;
-    gap: 10px;
-    grid-template-areas: "sidebar-feature";
 }
 
 .sidebar-feature {
@@ -445,10 +422,6 @@ footer {
     padding: 10px;
     border-radius: 20px;
     margin: 5px;
-}    
-    
-    .mobile-ad {
-        display: none;
-    }
 }
 
+}
