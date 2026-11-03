@@ -1,9 +1,82 @@
-    * {
+* {
         box-sizing: border-box;
-    }
-   body {
+}
+
+body {
     background color: grey
-    }
+}
+
+.brand {
+    grid-area: brand;
+    grid-row-start: brand;
+    grid-column-start: brand;
+    grid-row-end: brand;
+    grid-column-end: brand;
+}    
+
+.nav {
+    grid-area: nav;
+    grid-row-start: nav;
+    grid-column-start: nav;
+    grid-row-end: nav;
+    grid-column-end: nav;
+}
+
+.tools {
+    grid-area: tools;
+    grid-row-start: tools;
+    grid-column-start: tools;
+    grid-row-end: tools;
+    grid-column-end: tools;
+}
+
+.hero {
+    background: PaleGreen;
+    padding: 10px;
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "action";
+}
+
+.hero-feature {
+
+}
+
+.hero-action {
+
+
+}
+
+.desktop-ad {
+
+}
+
+.article-feature {
+
+
+}
+
+.article-listing {
+
+}
+
+.mobile-ad {
+
+}
+
+.sidebar {
+    background: BlanchedAlmond;
+    padding: 10px;
+    grid-area: sidebar;
+    display: none;
+}
+
+.sidebar-feature {
+
+}
+
 
     flex-container {
         display: flex;
